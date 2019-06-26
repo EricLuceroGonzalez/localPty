@@ -1,0 +1,35 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{place.name}}</mat-card-title>
+    <mat-card-subtitle>{{place.shortDescription}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{place.imagePath}}" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      {{place.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+<!-- <a href='#' class="list-group-item clearfix"
+  style="margin-top: 100px;border-radius: 40px; border: 2px dashed darkmagenta;">
+  <div class="row">
+    <img src="{{place.imagePath}}" alt="Description-image" style="opacity: 0.6; transition: opacity 0.2s ease 0s;"
+      width="130" height="330">
+    <div class="col-md-6" style="position:absolute; left: 0;
+                          bottom: 0; padding: 2rem 1rem 1rem; width: 100%;">
+      <h2 class='list-group-item-heading'>Title:  {{ place.name}} !</h2>
+      <p class="list-group-item-text">Dscr = {{place.shortDescription}}</p>
+      <p> <span style='font-weight: bold'>Points:</span> {{place.points}} </p>
+    </div>
+  </div>
+</a> -->
+
+<!-- <app-place-item *ngFor="let aPace in places"></app-place-item> -->

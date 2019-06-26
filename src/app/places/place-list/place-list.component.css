@@ -1,0 +1,11 @@
+.slide{
+background-color: rgba(144, 246, 246, 0.75);
+}
+
+.title{
+font-size: 2em;
+font-weight: bold;
+}
+.descript{
+  color: red;
+}

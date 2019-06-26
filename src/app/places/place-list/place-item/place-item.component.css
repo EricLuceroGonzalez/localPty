@@ -1,0 +1,26 @@
+.imgBack {
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.74;
+  height: 400px;
+  /* width: 400px; */
+}
+
+.imgBack:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+
+p {
+  /* font-size: 1em; */
+  color: black;
+  text-align: left;
+  opacity: 1;
+}
+
+h2 {
+  font-size: 5em;
+  color: red;
+}

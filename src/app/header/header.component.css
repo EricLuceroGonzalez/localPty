@@ -1,0 +1,10 @@
+.localBrand {
+  background-color: rgba(255, 100, 100, 0.4);
+  font-size: 26px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.head-btn {
+  margin: 10px 25px 15px 25px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}

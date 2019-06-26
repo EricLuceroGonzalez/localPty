@@ -1,0 +1,16 @@
+.head-btn {
+  margin: 10px 25px 15px 25px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.postBackground {
+  margin: 50px auto;
+  margin-bottom: 50px;
+  z-index: -10;
+  background: #333333;
+  background: -webkit-linear-gradient(135deg,
+      #eeabfd8a 0,
+      #a25ebd 50%,
+      #511579 100%);
+  background: linear-gradient(155deg, #f3bdffd3 0, #7d4792 50%, #3d2150 100%);
+}

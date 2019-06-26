@@ -1,0 +1,103 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-10" style="border: 2px solid violet;">
+      <div class="card-body px-lg-5 py-lg-5 postBackground" style="
+      box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.75);
+      margin: 50px auto;
+      padding: 10px 2px;">
+
+        <form [formGroup]="formBook" (ngSubmit)="onSubmit()" style="margin: 10px auto; border: 1px solid red;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="name" class="form-control" placeholder="Name" formControlName="name">
+                  <!-- 
+                  <div *ngIf="name.invalid" class="alert alert-danger">
+                    <div *ngIf="name.errors.required">
+                      Name is required.
+                    </div>
+                    <div *ngIf="name.errors.minlength">
+                      Name must be at least 4 characters long.
+                    </div>
+                    <div *ngIf="name.errors.forbiddenName">
+                      Name cannot be Bob.
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Lastname</label>
+                  <input type="text" class="form-control" placeholder="Lastname" formControlName="lastname">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" placeholder="name@example.com" formControlName="email">
+                  <!-- <div *ngIf="email.errors.required">First Name is required</div> -->
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <label>Number</label>
+                  <input type="tel" class="form-control" formControlName="phone"
+                    placeholder="Area Code + Your number, like: 333555667788">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-12 col-md-4 form-group">
+                <label> Pick a date!</label>
+                <input type="text" placeholder="DD /MM /YYYY" class="form-control" bsDatepicker
+                  [bsConfig]="{ adaptivePosition: true }">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Leave your message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Message"></textarea>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary"> Submit</button>
+          </div>
+        </form>
+        <div class="card-header bg-white pb-5">
+          <div class="text-muted text-center mb-3"><small>Want to see more?</small></div>
+          <div class="btn-wrapper text-center">
+            <a href="#">
+              <button type="button" class="btn btn-success head-btn"><i class="fab fa-tripadvisor"></i>
+                TripAdvisor</button>
+            </a>
+            <a href="#">
+              <button type="button" class="btn btn-success head-btn"><i class="fab fa-facebook"></i>
+                Facebook</button>
+            </a>
+            <a href="#">
+              <button type="button" class="btn btn-success head-btn"><i class="fab fa-instagram"></i>
+                Instagram</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <p>
+              Name:
+              {{formBook.status}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

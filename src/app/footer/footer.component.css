@@ -1,0 +1,96 @@
+.center {
+  padding: 2% 2%;
+  /*    background-color: rgba(111, 111, 111, 0.2);*/
+  background: linear-gradient(to bottom right, rgba(133, 133, 133, 0.4), rgba(17, 212, 150, 0.3));
+  text-align: center;
+  max-width: 100%;
+}
+.icons-div {
+  padding: 5px;
+}
+
+
+/***************  FOOTER ***************/
+
+footer {
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+  margin-top: 20em;
+  margin-bottom: 36px;
+  color: #888;
+}
+
+footer hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.fab:hover {
+  opacity: 0.6;
+}
+
+.footer {
+  color: white;
+  padding: 6px;
+  font-size: 2em;
+  /* width: 150px; */
+  margin: 0px 6px;
+  /* border-radius: 50%; */
+  box-shadow: 2px 4px 8px gray;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+/*  ***********  contact - Github */
+
+/* Whatsapp */
+
+.fa-whatsapp.footer {
+  background: black;
+  color: white;
+}
+
+/* Facebook */
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+/* Twitter */
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+.fa-google {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-heart {
+  color: #E52D38;
+}
+
+.fa-code {
+  color: #00c6fb;
+}
+
+.fa-registered {
+  color: blue;
+  font-size: 0.8em;
+}
+.footer-closure {
+  margin-top: 1em;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7em;
+}
