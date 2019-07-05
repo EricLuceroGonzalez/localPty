@@ -25,4 +25,12 @@ export class PeopleService {
   getAllPeople() {
     return this.allPeople;
   }
+  // Method to get recipe with specific 'id':
+  getOnePeople(index: number) {
+    return this.allPeople.slice()[index];
+  }
+
 }
+
+
+
