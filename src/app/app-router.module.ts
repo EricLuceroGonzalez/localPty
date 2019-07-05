@@ -6,10 +6,10 @@ import { PeopleComponent } from './people/people.component';
 import { ToursComponent } from './tours/tours.component';
 import { AboutComponent } from './about/about.component';
 import { LocalKidsComponent } from './local-kids/local-kids.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '../', pathMatch: 'full' },
+  { path: '', redirectTo: './home/home.component', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'places', component: PlacesComponent },
   { path: 'people', component: PeopleComponent },
