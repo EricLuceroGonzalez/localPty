@@ -1,25 +1,33 @@
 <!-- <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet"> -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top"
+style="box-shadow: 6px 1px 12px gray;">
   <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+      >
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href='../app.component.html' class="navbar-brand localBrand"> Local<span style="color: red">PTY</span> </a>
+      <a [routerLink]="['']" class="navbar-brand localBrand">
+        Local<span style="color: red">PTY</span>
+      </a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li> <a href="#">Places</a></li>
-        <li> <a href="#">People</a></li>
-        <li> <a href="#">Tours</a></li>
-        <li> <a href="#">About</a></li>
-        <li> <a href="#">Kids</a></li>
+        <li><a [routerLink]="['places']">Places</a></li>
+        <li><a [routerLink]="['people']">People</a></li>
+        <li><a [routerLink]="['tours']">Tours</a></li>
+        <li><a [routerLink]="['abouts']">About</a></li>
+        <li><a [routerLink]="['kids']">Kids</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-          <button type="button" class="btn btn-danger head-btn">Book Now</button>
+        <button type="button" class="btn btn-danger head-btn">Book Now</button>
         <!-- <li> <a href="#" style="background-color: greenyellow;">Book Now</a></li> -->
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" role="button">Manage <span class='caret'></span></a>
@@ -32,8 +40,6 @@
     </div>
   </div>
 </nav>
-
-
 
 <!-- <div class="container-fluid">
   <div class="navbar-header">

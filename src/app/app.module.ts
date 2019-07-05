@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-router.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -26,6 +27,11 @@ import { MatButtonModule, MatCheckboxModule, MatRadioModule, MatStepperModule, M
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContentComponent } from './content/content.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { ToursComponent } from './tours/tours.component';
+import { AboutComponent } from './about/about.component';
+import { LocalKidsComponent } from './local-kids/local-kids.component';
+import { PlacesService } from './places/places.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +50,11 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     PeopleComponent,
     PeopleListComponent,
     PeopleItemComponent,
-    ContentComponent
+    ContentComponent,
+    ToursComponent,
+    AboutComponent,
+    LocalKidsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -61,10 +71,11 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     MatButtonModule, MatCardModule, MatCheckboxModule, MatRadioModule, MatSelectModule,
     MatStepperModule,
     MatTabsModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    AppRoutingModule
 
   ],
-  providers: [],
+  providers: [PlacesService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
